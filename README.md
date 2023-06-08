@@ -37,4 +37,11 @@ Tests would be nice.
 
 Switch to an unnaïve algorithm for route calculation. The simplest would be a recursive tree of route options, reducing down to the route with the shortest total distance. When there are more than a couple dozen stops, however, an exhaustive search could be computationally draining, so perhaps a hybrid option: start with the current "middle out" system, and use tree comparison to look ahead just a few stops at a time. I think this is when it makes the most boneheaded decisions right now anyway, and constitutes a reasonable compromise in terms of diminishing returns for the BINGEDRONE empire. Definitely needs tests.
 
+Even looking one more hop ahead gets this simple algorithm pretty close to shippable:
+
+<img width="641" alt="faulty route" src="https://github.com/christopherkula/bingedrone/assets/97899131/4a12554d-50b2-40e3-87b1-e13a13645db9">
+
+The ordering of the two stops in the bottom right should be reversed. The route was clearly being built from the "South of Market" neighborhood. From that direction the next hop makes sense, but if the big jump down left were factored in the correct route would have been reached.
+
 UI: It would also be fun to reveal the route quickly but one segment at a time via a timeout mechanism.
+
