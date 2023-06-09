@@ -9,6 +9,11 @@ Search for your cuisine (or company, or street) to filter the list of SF food tr
 
 Payment? Don't worry, we'll send a bill. You're good for it.
 
+Live Version On GitHub
+----------------------
+
+https://christopherkula.github.io/
+
 To Start BINGEDRONE
 -------------------
 
